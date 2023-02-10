@@ -1,9 +1,13 @@
 import "./styles.scss";
+import banner from "../../assets/image-hero.jpg";
 
 function Banner() {
   return (
     <>
-      <h1 className="banner-title">Banner</h1>
+      <img src={banner} alt="" />
+      <p class="banner__text">
+        immersive <span>experiences</span><span>that deliver</span>
+      </p>
     </>
   );
 }
