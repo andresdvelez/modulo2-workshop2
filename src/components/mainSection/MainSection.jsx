@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./style.scss";
 
 function MainSection() {
-  return (
-    <div>MainSection</div>
-  )
+  return <div>MainSection</div>;
 }
 
-export default MainSection
+export default MainSection;
