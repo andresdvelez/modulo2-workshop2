@@ -5,7 +5,7 @@ function Banner() {
   return (
     <>
       <img src={banner} alt="" />
-      <p class="banner__text">
+      <p className="banner__text">
         immersive <span>experiences</span><span>that deliver</span>
       </p>
     </>

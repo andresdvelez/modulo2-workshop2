@@ -12,8 +12,10 @@ function App() {
     <>
       <Header />
       <Banner />
-      <MainSection />
-      <Grid />
+      <div className="main__container">
+        <MainSection />
+        <Grid />
+      </div>
       <Footer />
     </>
   );
