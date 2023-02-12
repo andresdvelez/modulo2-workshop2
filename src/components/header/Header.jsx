@@ -1,20 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.scss";
-import logo from "../../assets/logo.svg";
+import burgerMenu from "../../assets/icon-hamburger.svg";
+import Logo from "../../utils/Logo";
+import MobileMenu from "../mobileMenu/MobileMenu";
+
+export const listMenu = ["About", "Careers", "Events", "Products", "Support"];
 
 function Header() {
-  const listMenu = ["About", "Careers", "Events", "Products", "Support"];
+  const [show, setShow] = useState(false);
+
+  const handleClick = () => {
+    setShow(!show);
+  };
 
   return (
     <header className="header">
-      <a href="#" className="logo">
-        <img src={logo} alt="loopstudio" />
-      </a>
+      <Logo />
+      <button onClick={handleClick} className="hamburger-menu">
+        <img src={burgerMenu} alt="" />
+      </button>
+      <MobileMenu isShow={show} handleClick={handleClick} />
+
       <nav className="nav__links">
-        {listMenu.map((item, index) => (
-          <div key={index}>
-            <a href="#about">{item}</a>
-          </div>
+        {listMenu.map((item, i) => (
+          <a key={i} href="#">
+            {item}
+          </a>
         ))}
       </nav>
     </header>

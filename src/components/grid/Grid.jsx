@@ -15,7 +15,7 @@ function Grid() {
         <h2 className="creations__header-title">our creations</h2>
         <button className="creations__header-btn">see all</button>
       </div>
-      <div className="cerations-wrapper">
+      <div className="creations-wrapper">
         <div className="creation__card">
           <img src={deepEarth} alt="" className="creation__card-img" />
           <p className="creation__card-text">

@@ -39,12 +39,11 @@
   }
 }
 
-.cerations-wrapper {
+.creations-wrapper {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1200px;
 }
 
 .creation__card {
@@ -90,5 +89,33 @@
   &:hover::after {
     background-color: rgba(255, 255, 255, 0.6);
     transition: 250ms ease;
+  }
+}
+
+@media (max-width: 425px) {
+  .creations__header {
+    justify-content: center;
+
+    &-btn {
+      display: none;
+    }
+  }
+
+  .creation__card {
+    margin-bottom: 2rem;
+    height: 240px;
+    width: 90vw;
+
+    pointer-events: none;
+
+    &-img {
+      object-fit: cover;
+      background-position: top;
+    }
+
+    &-text {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
   }
 }
