@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
 button {
+  background-color: transparent;
   border: none;
+}
+
+figure {
+  margin: 0;
 }
 
 ul {
@@ -19,9 +24,8 @@ body {
   padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.app {
+  overflow: hidden;
 }
 
 .main__container {

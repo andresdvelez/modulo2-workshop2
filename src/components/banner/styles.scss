@@ -1,4 +1,4 @@
-img {
+.banner-img {
   object-fit: cover;
   height: 80vh;
   width: 100vw;
@@ -17,4 +17,17 @@ img {
 
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 425px) {
+  .banner-img {
+    height: 100vh;
+  }
+
+  .banner__text {
+    padding: 1.5rem 1.3rem;
+    top: 250px;
+    left: 20px;
+    font-size: 3rem;
+  }
 }
