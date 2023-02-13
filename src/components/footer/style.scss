@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+  background-color: #030303;
+  margin-top: 20rem;
+  padding: 3rem 10rem;
+  height: 20vh;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer__top-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__bottom-right {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+}
